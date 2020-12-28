@@ -46,6 +46,7 @@ class XdripPlugin @Inject constructor(
         bgReading.date = bundle.getLong(Intents.EXTRA_TIMESTAMP)
         bgReading.raw = bundle.getDouble(Intents.EXTRA_RAW)
         val source = bundle.getString(Intents.XDRIP_DATA_SOURCE_DESCRIPTION, "no Source specified")
+        aapsLogger.debug(LTag.BGSOURCE, "Received xDrip source: " + source)
         setSource(source)
         MainApp.getDbHelper().createIfNotExists(bgReading, "XDRIP")
     }
