@@ -128,7 +128,7 @@ android {
             manifestPlaceholders = [
                     appIcon     : "@mipmap/ic_launcher",
                     appIconRound: "@mipmap/ic_launcher_round"
-            ]-nickx
+            ]
         }
         pumpcontrol {
             applicationId "info.nightscout.aapspumpcontrol"
