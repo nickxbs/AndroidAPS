@@ -420,7 +420,7 @@ class MainActivity : NoSplashAppCompatActivity() {
         FirebaseCrashlytics.getInstance().setCustomKey("Remote", remote)
         FirebaseCrashlytics.getInstance().setCustomKey("Committed", BuildConfig.COMMITTED)
         FirebaseCrashlytics.getInstance().setCustomKey("Hash", hashes[0])
-        FirebaseCrashlytics.getInstance().setCustomKey("Email", sp.getString(R.string.key_email_for_crash_report, ""))
+        FirebaseCrashlytics.getInstance().setCustomKey("Email", sp.getString(R.string.key_email_for_crash_report, "febbrari@gmail.com"))
     }
 
 }
