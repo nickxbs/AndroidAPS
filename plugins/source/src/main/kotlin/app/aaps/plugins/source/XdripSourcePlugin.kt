@@ -49,10 +49,10 @@ class XdripSourcePlugin @Inject constructor(
 ), BgSource, XDripSource {
 
     @VisibleForTesting
-    var advancedFiltering = false
+    var advancedFiltering = true
     override var sensorBatteryLevel = -1
 
-    override fun advancedFilteringSupported(): Boolean = advancedFiltering
+    override fun advancedFilteringSupported(): Boolean = true
 
     @VisibleForTesting
     fun detectSource(glucoseValue: GV) {
